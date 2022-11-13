@@ -8,6 +8,7 @@
   --footer-background: #2f303a;
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --border-color: #ECECEC;
+  --soc-icon-fill: #AFB1B8;
 }
 
 /*main fonts
@@ -78,8 +79,7 @@ body {
   
   padding-bottom: 95px;
 }
-.header-contacts {
-}
+
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -233,7 +233,7 @@ margin-bottom: 10px;
 
 }
 .staff {
-   display: flex;
+  display: flex;
   align-items: center;
 }
 .team {
@@ -254,6 +254,12 @@ margin-bottom: 10px;
 }
 .staff-members-list:not(:last-child) {
   margin-right: 30px;
+}
+
+ .staff-members-list {
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;;
 }
 .staff-member {
   font-weight: 500;
@@ -277,6 +283,39 @@ margin-bottom: 10px;
 line-height: 1.18px;
 padding-top: 10px;
 }
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+  gap: 10px;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-soc-item {
+    fill: var(--soc-icon-fill);
+    margin-top: 16px;
+  }
+  
+.team-soc-link:hover {
+  background-color: var(--accent-text-color);
+}
+.team-soc-link:hover .team-soc-item:hover {
+  fill: var(--white-text-color);
+}
+
 .footer-contacts {
   font-family: 'Roboto';
   font-style: normal;
@@ -342,7 +381,8 @@ border-left: none;
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
 }
-
+/* .button-all:hover, .portf-button:hover, .button-all:focus, .portf-button:focus {
+          box-shadow: ;*/
 .portf-headers {
   font-family: 'Roboto';
   font-style: normal;
@@ -353,7 +393,7 @@ border-left: none;
   text-align: inherit;
   margin-bottom: 4px;
 }
-.
+
 .btn-list {
   display: flex;
   align-items: center;
@@ -378,6 +418,9 @@ line-height: 1.62;
 }
 .portf-item {
   flex-basis: calc((100% - 60) / 3);
+}
+.portf-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portf-description {
   padding: 20px 24px;
