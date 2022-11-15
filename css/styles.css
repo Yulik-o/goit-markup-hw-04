@@ -33,7 +33,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid green;
+  outline: 1px solid transparent;
 }
 .header {
   height: 80px;
@@ -153,6 +153,7 @@ body {
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
   border-color: var(--accent-text-color);
+   border-radius: 4px;
 }
 .btn-first-page {
   width: 216px;
@@ -237,7 +238,8 @@ h2 {
   width: 270px;
   height: 120px;
   background-color: var(--portfolio-button);
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 /*.benefits-icon {
   display: flex;
@@ -284,19 +286,20 @@ h2 {
   padding-bottom: 30px;
   border: 1px solid var(--border-color);
   border-top: 0em;
+  background-color: var(--white-text-color);
   /*padding-left: 15px;
   padding-right: 15px;*/
 }
 .member-text {
   font-size: 16px;
-  line-height: 1.18px;
+  line-height: 1.18;
   padding-top: 10px;
 }
 .team-soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 30px;
+ 
   margin-top: 16px;
 }
 .team-soc-item {
@@ -318,14 +321,19 @@ h2 {
 }
 .team-soc-item {
   fill: var(--soc-icon-fill);
-  margin-top: 16px;
-}
 
-.team-soc-link:hover, .team-soc-link:focus {
-  background-color: var(--accent-text-color);
-  fill: var(--white-text-color);
 }
-.team-soc-link:hover .team-social-icon:hover, .team-soc-link:focus .team-social-icon:focus{
+/*.team-social-icon:focus, .team-social-icon:hover {
+  
+  fill: var(--white-text-color);
+  background-color: var(--accent-text-color);
+}*/
+.team-soc-link:hover, .team-soc-link:focus {
+  
+  
+   background-color: var(--accent-text-color);
+}
+.team-soc-link:hover .team-social-icon:hover {
   fill: var(--white-text-color);
 }
 
@@ -440,7 +448,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 
 color: #FFFFFF;
-padding-top: 72px;
+
 }
 
 
